@@ -1,0 +1,136 @@
+body{
+  background-color:aqua;
+  text-align: center;
+  background: #141414 url("https://unsplash.it/1228/880?image=302");
+  background-repeat: space;
+  background-size:cover;
+  Background-position: 50%; 
+  height: 100vh;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  left: 50%;
+  margin-left: -225px;
+  animation: animated 7s 1s linear forwards;
+}
+
+.sliding>p,a{
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+footer{
+   color:white;
+   font-size:30px;
+   text-align:center;
+   padding:10px;
+}
+.sliding p {
+  text-align: center;
+  text-transform: uppercase;
+  width: 500px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  padding: 0;
+  margin: 5px auto;
+  background-color:#A7383E;
+  color: white;
+  
+  animation: slidedown 3s forwards;
+  position: relative;
+  visibility: hidden;
+}
+ .sliding p:nth-child(1){
+     animation-delay: 1s;
+     z-index: 7;
+ }
+ .sliding p:nth-child(2){
+     animation-delay: 2s;
+     z-index: 6;
+ }
+ .sliding p:nth-child(3){
+     animation-delay: 3s;
+     z-index: 5;
+ }
+ .sliding p:nth-child(4) {
+     animation-delay: 4s;
+     z-index: 4;
+ }
+ .sliding p:nth-child(5) {
+     animation-delay: 5s;
+     z-index: 3;
+ }
+ .sliding p:nth-child(6) {
+     animation-delay: 6s;
+     z-index: 2;
+ }
+ .sliding p:nth-child(7) {
+     animation-delay: 7s;
+     z-index: 1;
+ }
+ 
+ @keyframes slidedown {
+     0% {
+         visibility: hidden;
+         bottom: 50px;
+         opacity: 0;
+     }
+     75% {
+         visibility: visible;
+         bottom: 0;
+         opacity: 1;
+     }
+     100% {
+         margin: 20px auto;
+         visibility: visible;
+     }
+ }
+.sliding:after {
+ content: "";
+ display: block;
+ text-align: center;
+ animation: slidedown-content 7s 1s linear forwards;
+ margin-top: -370px;
+}
+ @keyframes slidedown-content {
+     0% {
+         margin-top: -370px;
+     }
+     100% {
+         margin-top: 0;
+     }
+ }
+
+
+@keyframes animated{
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-300rem, 0, 0);
+    transform: translate3d(-300rem, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(2.5rem, 0, 0);
+    transform: translate3d(2.5rem, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-1rem, 0, 0);
+    transform: translate3d(-1rem, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(2.5rem, 0, 0);
+    transform: translate3d(2.5rem, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
