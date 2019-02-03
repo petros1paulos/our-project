@@ -234,11 +234,11 @@ nav ul {
 }
 
 
-.img-responsive{
+/* .img-responsive{
 
     width: 100%;
 
-}
+} */
 .panner{
     background-color: #A7383E;
     margin-top: 50px;
@@ -248,6 +248,9 @@ nav ul {
     border-radius: 10px;
     
 }
+.banner{
+  padding-top: 35%;
+} 
 
 .panner>h1{
     font-size: 50px;
@@ -265,11 +268,11 @@ h1{
     transform: translate3d(-300rem, 0, 0);
   }
 
-  60% {
-    opacity: 1;
+   60% {
+     opacity: 1; 
     
     transform: translate3d(2.5rem, 0, 0);
-  }
+  } 
 
   75% {
     
@@ -279,19 +282,19 @@ h1{
   90% {
   
     transform: translate3d(2.5rem, 0, 0);
-  }
+  } 
 
-  to {
+ to {
   
     transform: translate3d(0, 0, 0);
-  }
-}
+  } 
+}  
 button{
     color: #fff;
     background-color: #A7383E;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 20px;
-    line-height: 20px;
+    /* line-height: 20px; */
     border-radius: 10px;
 }
 button{
@@ -388,46 +391,86 @@ section h3{
 }
 
   /* footer start here */
-  .container{
+  .container1{
+    
     display: flex;
-    flex-direction: row;
+    background:#7a7777;
+    width: 100vw;
+    
+    font-family: 'Lora', serif; 
    
-    background-color: #6767;
+}
+.left1{
+    flex: 60%;
+    
+
+}
+.right1{
+    display: flex;
+    flex: 40%;
+    /* background-color: rgb(105, 85, 219); */
+    justify-content: center;
+
+   
+    
+}
+input{
+    display: block;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    width: 30rem;
+    
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+.img1 img{
+   
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    border-radius: 100% 100%;
+    margin: 10rem 0.8rem 0.2rem 0.2rem;
+  
+} 
+
+/* ende now container1 */
+
+.container{
+    display: flex;
+    /* flex-direction: row; */
+   
+    background:#7a7777;
     width: 100vw;
     height: 40vh;
+    font-family: 'Lora', serif; 
 }
 .left{
     flex: 30vw;
     /* background-color: #080; */
-    
-    
-}
-iframe{
-    border-radius:  100px;
-    width: 10rem;
-    height: 10rem;
-    /* border: 2px solid black; */
-    
-    
 }
 .left iframe{
     
-   width: 100%;
+    width: 100%;
     height: 13rem;
+    margin: 1rem;
 }
-
 .main{
     flex: 60vw;
-    /* background-color: #ff0000; */
-    justify-content: center;
-   
-    text-align: center;
-    padding-top: 3rem;
+    /* background-color: #ff0000;  */
+   text-align: center;
+   padding-top: 3rem; 
+   position: relative;
+  
 }
 .right{
     flex: 30vw;
     /* background-color: #660066; */
    position: relative;
+   
+  
 }
  .right>i{
      color: #ff0000;
@@ -435,20 +478,30 @@ iframe{
      top: 7rem;
      right: 2rem;
      font-size: 2rem;
-     
-     
+ }
+ .right>:nth-child(2){
+     position: absolute; 
+     top: 7rem;
+     font-size: 1.5rem;
+ }
+ .right>:nth-child(3){
+     top: 13rem;
+     color: #000;
+ }
+ .right>:nth-child(4){
+     position: absolute;
+     top: 13rem;
+     /* right: 10rem; */
+     font-size: 1.3rem;
  }
 .footerFo{
     display: flex;
-    justify-content: space-between;
-  
+    justify-content: center;
+    font-family: 'Lora', serif; 
     width: 100vw;
     height: 10vh;
     /* background-color: blue; */
     background-color: rgba(73, 77, 73, 0.467);
-    
-    
-
 }
 p{
     color: #ddd;
@@ -459,37 +512,66 @@ p{
 p a{
     text-decoration: none;
     color: #ddd;
-   
 }
 a:hover{
-    color: #00ff88;
+    color: #0000ff
+    ;
 }
 .icon{
-    
-    
     /* position: absolute;  */
     top: 10rem;
     right: 2.5rem;
+    
 }
 .icon i{
     font-size: 2rem;
     width: 3rem;
     color: rgb(97, 81, 81);
     /* transition: all .5s ease-in-out */
-    
-    
+   
+    right: 5rem;
 } 
 i:hover{
     color:#0000ff ;
     -webkit-transform: scale(2,2);
     transform: scale(2,2);
     /* transform: rotateX(320deg); */
+}
+
+ @media only screen and (max-width: 600px){
+.container,.main,.left{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100%;
+}
+.footerFo{
+   
+    height: 20vh;
     
 }
- 
-.banner{
-  padding-top: 35%;
+.right{
+    height: 200vh;
+    padding-bottom: 20rem;
 }
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+img{
+ 
+  
+    width: 7rem;
+    height: 7rem;
+    margin: auto; 
+}
+input{
+    width: 100%;
+}
+} 
+
 
 
 
