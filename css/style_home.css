@@ -20,9 +20,8 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-/***********************************************************************
- *  Nav Bar
- **********************************************************************/
+
+ 
 .main-nav {
     display: flex;
     list-style: none;
@@ -56,9 +55,7 @@ a {
   width: 100%;
 }
 
-/***********************************************************************
- *  Cover
- **********************************************************************/
+
 .container {
     /*show heigh: auto*/
     height: 70vh; 
@@ -218,7 +215,7 @@ a {
   
   .slider-content h1{
     font-size: 3.5rem;
-    color: #A7383E;
+    color: salmon;
     text-align: center;
     padding-top: 15%;
   }
@@ -235,8 +232,8 @@ a {
 
   .banner{
     padding-top: 15%;
-    height: 250px;
-    z-index: -1;
+    height: 260px;
+
   } 
   
   .panner>h1{
