@@ -385,8 +385,9 @@ label{
 }
 .right{
     flex: 30vw;
-    /* background-color: #660066; */
    position: relative;
+   color: #FFF;
+   padding-left: 15px;
    
   
 }
@@ -478,13 +479,7 @@ i:hover{
    
     
 }
-/* .img1{
- 
-  
-    width: 7rem;
-    height: 7rem;
-    margin: auto; 
-} */
+
 input{
     width: 100%;
 }
